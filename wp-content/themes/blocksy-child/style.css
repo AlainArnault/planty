@@ -12,9 +12,9 @@ element {
 
 
 /* HEADER */
-.ct-container {
-  height: 80px;
-  width: 1440px;
+header {
+  height: 80px; !important
+  width: 1440px; !important
   align-content: center;
 }
 
@@ -22,7 +22,6 @@ element {
 .site-logo-container img {
   height: 19px;
   margin-left: 37px;
-  align-content: center;
 }
 
 /* MENU */
@@ -32,9 +31,3 @@ element {
   color : #DC9F96
 }
 
-/* LIENS DU MENU */ 
-li .menu-item {
-  font-size: 16px;
-  margin-top: 31px;
-  line-height: 1;
-}
