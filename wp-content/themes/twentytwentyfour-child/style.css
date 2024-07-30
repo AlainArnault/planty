@@ -1,0 +1,65 @@
+/*
+Theme Name: Twenty Twenty-Four Child
+Theme URI: https://wordpress.org/themes/twentytwentyfour/
+Template: twentytwentyfour
+Author: the WordPress team
+Author URI: https://wordpress.org
+Description: Twenty Twenty-Four is designed to be flexible, versatile and applicable to any website. Its collection of templates and patterns tailor to different needs, such as presenting a business, blogging and writing or showcasing work. A multitude of possibilities open up with just a few adjustments to color and typography. Twenty Twenty-Four comes with style variations and full page designs to help speed up the site building process, is fully compatible with the site editor, and takes advantage of new design tools introduced in WordPress 6.4.
+Tags: one-column,custom-colors,custom-menu,custom-logo,editor-style,featured-images,full-site-editing,block-patterns,rtl-language-support,sticky-post,threaded-comments,translation-ready,wide-blocks,block-styles,style-variations,accessibility-ready,blog,portfolio,news
+Version: 1.2.1722274553
+Updated: 2024-07-29 19:35:53
+
+*/
+
+/* HEADER */
+
+body > div.wp-site-blocks > header {
+    height: 80px;
+    background-color: white;
+}
+
+body > div.wp-site-blocks > header > div {
+    height: 80px;
+    padding-top: 0px !important; 
+    padding-bottom: 0px !important;   
+}
+
+.wp-block-site-logo img {
+    height: 19px;
+}
+
+body > div.wp-site-blocks > header > div > div > div.wp-block-group.is-layout-flex.wp-container-core-group-is-layout-2.wp-block-group-is-layout-flex > div.wp-block-group.is-layout-flow.wp-container-core-group-is-layout-1.wp-block-group-is-layout-flow {
+    display: none;
+}
+
+#modal-1-content > ul {
+    font-size: 16px;
+}
+
+#modal-1-content > ul > li:nth-child(1) {
+    font-weight: 400;
+    justify-content: center;
+}
+
+#modal-1-content > ul > li:nth-child(2) {
+    width: 236px;
+    height: 80px;
+    background-color: #DC9F96;
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+}
+
+/* MAIN */
+
+#wp--skip-link--target > div.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    height: 10px;
+}
+
+#wp--skip-link--target > div.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > h1 {
+    display: none;
+}
+
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.alignfull.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
+    padding-top: -500px;
+}
