@@ -13,6 +13,7 @@ Updated: 2024-07-29 19:35:53
 
 /* HEADER */
 
+/* Régalge de la hauteur et de la position du Header*/
 body > div.wp-site-blocks > header {
     height: 80px;
     background-color: white;
@@ -24,23 +25,28 @@ body > div.wp-site-blocks > header > div {
     padding-bottom: 0px !important;   
 }
 
+/* Régalge de la taille du logo*/
 .wp-block-site-logo img {
     height: 19px;
 }
 
+/* Invisibiliser le titre du site */
 body > div.wp-site-blocks > header > div > div > div.wp-block-group.is-layout-flex.wp-container-core-group-is-layout-2.wp-block-group-is-layout-flex > div.wp-block-group.is-layout-flow.wp-container-core-group-is-layout-1.wp-block-group-is-layout-flow {
     display: none;
 }
 
+/* Taille de police menu navigation */
 #modal-1-content > ul {
     font-size: 16px;
 }
 
+/* Mise en page du bouton Nous Rencontrer */
 #modal-1-content > ul > li:nth-child(1) {
     font-weight: 400;
     justify-content: center;
 }
 
+/* Mise en page du bouton Commander */
 #modal-1-content > ul > li:nth-child(2) {
     width: 236px;
     height: 80px;
@@ -52,14 +58,26 @@ body > div.wp-site-blocks > header > div > div > div.wp-block-group.is-layout-fl
 
 /* MAIN */
 
-#wp--skip-link--target > div.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
-    height: 10px;
+/* Suppression de la marge supérieure du bloc main */
+#wp--skip-link--target {
+    margin-block-start: 0;
 }
 
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained {
+    margin-block-start: 0;
+}
+
+/* Réduction du Header-Hero du thème */
+#wp--skip-link--target > div.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    height: 0px;
+}
+
+/* Invisibiliser le titre de page */
 #wp--skip-link--target > div.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > h1 {
     display: none;
 }
 
-#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.alignfull.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
-    padding-top: -500px;
+/* Superposer la canette sur les feuilles */
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div:nth-child(2) > figure {
+    margin-block-start: -520px;
 }
