@@ -1,0 +1,170 @@
+/*
+Theme Name: Astra Child
+Theme URI: https://wpastra.com/
+Template: astra
+Author: Brainstorm Force
+Author URI: https://wpastra.com/about/?utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme
+Description: Astra is fast, fully customizable &amp; beautiful WordPress theme suitable for blog, personal portfolio, business website and WooCommerce storefront. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with Schema.org code integrated and is Native AMP ready so search engines will love your site. It offers special features and templates so it works perfectly with all page builders like Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. Some of the other features: # WooCommerce Ready # Responsive # RTL &amp; Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained &amp; Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and WooCommerce ready theme that you can use for building any kind of website!
+Tags: custom-menu,custom-logo,entertainment,one-column,two-columns,left-sidebar,e-commerce,right-sidebar,custom-colors,editor-style,featured-images,full-width-template,microformats,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready,blog
+Version: 4.7.3.1723666281
+Updated: 2024-08-14 22:11:21
+
+*/
+
+/* HEADER */
+
+/* Mise en page du bouton Nous Rencontrer */
+#menu-item-661 > a {
+    color: black;
+    font-weight: 400;
+    justify-content: center;
+}
+
+/* Mise en page du bouton Commander */
+#menu-item-660 {
+    display: flex;
+    width: 236px;
+    height: 80px;
+    background-color: #DC9F96;
+    
+}
+
+#menu-item-660 > a {
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+/* Hauteut du footer */
+footer {
+    height: 60px;
+    gap: 0
+}
+
+/* MAIN Page d'Accueil */
+
+/* Suppression de la marge supérieure du bloc main */
+#wp--skip-link--target {
+    margin-block-start: 0;
+}
+
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained {
+    margin-block-start: 0;
+}
+
+/* Réduction de la hauteur du Header-Hero du thème */
+#wp--skip-link--target > div.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    height: 0px;
+}
+
+/* Invisibiliser le titre de page */
+#wp--skip-link--target > div.wp-block-group.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > h1 {
+    display: none;
+}
+
+/* Superposer la canette sur les feuilles */
+
+#post-16 > div > div.wp-block-uagb-container.fond-beige.uagb-block-fee296ac.alignfull.uagb-is-root-container > div > figure > img {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transform: translate(-1% , -75%);
+}
+
+/* Responsive mode image canette*/
+@media (max-width: 1440px) {
+    #post-16 > div > div.wp-block-uagb-container.fond-beige.uagb-block-fee296ac.alignfull.uagb-is-root-container > div > figure > img {
+        height: clamp(12px, (80vw), 618px);
+        width: auto;
+    }
+    #post-16 > div > div.wp-block-uagb-container.fond-beige.uagb-block-fee296ac.alignfull.uagb-is-root-container > div > div > figure:nth-child(1) > img ,
+    #post-16 > div > div.wp-block-uagb-container.fond-beige.uagb-block-fee296ac.alignfull.uagb-is-root-container > div > div > figure:nth-child(2) > img {
+        height: clamp(12px, (25vw), 400px);
+        width: auto;        
+    }
+}
+
+/* Appliquer les arrondis sur le bas des fonds beige */
+
+.fond-beige {
+    border-radius: 0% 0% 80% 80% / 0% 0% 10% 10% !important;
+}
+
+
+/* MAIN Page Nous Rencontrer */
+
+/* Padding nous rencontrer */
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.fond_beige.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    padding-top: 100px;
+}
+/* Superposer nous rencontrer et feuille */
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.fond_beige.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
+    position: absolute;
+    transform: translate(-350%, -30%);
+}
+/* Superposer Equipe et Feuille */
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div:nth-child(2) > figure {
+    position: relative;
+    transform: translate(-5vmin, -15vmin);
+}
+
+@media (max-width: 600px) {
+    #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13.wp-block-group-is-layout-constrained > div.wp-block-group.gouts.has-small-font-size.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid p {
+        font-size: clamp(12px, 2rem + ((1vw - 3.2px) * 1.2), 48px) !important;
+    }
+    #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13.wp-block-group-is-layout-constrained > div.wp-block-group.gouts.has-small-font-size.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid {
+        grid-template-columns: 1fr;
+    }   
+}
+
+/* Centrage du formulaire */
+.nous_contacter {
+    display: flex;
+    justify-content: center;
+}
+
+/* Mise en forme du formulaire*/
+#wpcf7-f7-p20-o1 {
+    width: 383px;
+    z-index: 2;
+}
+
+#wpcf7-f7-p20-o1 > form > p:nth-child(2) > label > span > input , 
+#wpcf7-f7-p20-o1 > form > p:nth-child(3) > label > span > input {
+    width: 100%;
+    height: 71px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px 0px #0000000A;
+    margin-top: 15px;
+}
+
+#wpcf7-f7-p20-o1 > form > p:nth-child(4) > label > span > textarea {
+    width: 100%;
+    height: 237px;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0px 4px 14px 0px #0000000A;
+    margin-top: 15px;   
+}
+
+#wpcf7-f7-p20-o1 > form > p:nth-child(5) > input {
+    width: 52%;
+    height: 55px;
+    background-color: #E0B9B4;
+    color: white;
+    font-size: 15px;
+    margin: 5px 25% 0;
+    border: 0;
+    border-radius: 5px;
+}
+
+/* Superposer la fleur sous le formulaire */
+.form_flower {
+    position: absolute;
+    transform: translate(237%, -155%);
+    z-index: 1;
+}
+

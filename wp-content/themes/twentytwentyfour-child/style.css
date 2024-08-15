@@ -119,8 +119,7 @@ footer {
     }
     #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13.wp-block-group-is-layout-constrained > div.wp-block-group.gouts.has-small-font-size.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid {
         grid-template-columns: 1fr;
-    }
-    
+    }   
 }
 
 /* Appliquer les arrondis sur le bas des fonds beige */
@@ -146,13 +145,21 @@ footer {
 /* Superposer nous rencontrer et feuille */
 #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.fond_beige.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
     position: absolute;
-    transform: translate(150%, -25%);
+    transform: translate(-350%, -30%);
 }
 /* Superposer Equipe et Feuille */
 #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div:nth-child(2) > figure {
-    position: absolute;
-    transform: translate(600%, 0%);
-    margin-top: -150px
+    position: relative;
+    transform: translate(-5vmin, -15vmin);
+}
+
+@media (max-width: 600px) {
+    #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13.wp-block-group-is-layout-constrained > div.wp-block-group.gouts.has-small-font-size.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid p {
+        font-size: clamp(12px, 2rem + ((1vw - 3.2px) * 1.2), 48px) !important;
+    }
+    #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13.wp-block-group-is-layout-constrained > div.wp-block-group.gouts.has-small-font-size.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid {
+        grid-template-columns: 1fr;
+    }   
 }
 
 /* Centrage du formulaire */
@@ -195,7 +202,6 @@ footer {
     margin: 5px 25% 0;
     border: 0;
     border-radius: 5px;
-
 }
 
 /* Superposer la fleur sous le formulaire */
