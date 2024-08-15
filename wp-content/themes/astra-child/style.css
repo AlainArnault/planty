@@ -104,30 +104,28 @@ footer {
     position: absolute;
     transform: translate(-350%, -30%);
 }
-/* Superposer Equipe et Feuille */
-#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div:nth-child(2) > figure {
-    position: relative;
-    transform: translate(-5vmin, -15vmin);
-}
 
-@media (max-width: 600px) {
-    #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13.wp-block-group-is-layout-constrained > div.wp-block-group.gouts.has-small-font-size.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid p {
-        font-size: clamp(12px, 2rem + ((1vw - 3.2px) * 1.2), 48px) !important;
+/* Responsive mode image nous rencontrer*/
+@media (max-width: 1440px) {
+    #post-20 > div > div.wp-block-uagb-container.fond-beige.uagb-block-80aa8bbf.alignfull.uagb-is-root-container > div > div.wp-block-uagb-image.alignleft.uagb-block-3557e556.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-left > figure > img {
+        height: clamp(12px, (10vw), 150px);
+        width: auto;
     }
-    #wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-container-core-group-is-layout-13.wp-block-group-is-layout-constrained > div.wp-block-group.gouts.has-small-font-size.is-layout-grid.wp-container-core-group-is-layout-12.wp-block-group-is-layout-grid {
-        grid-template-columns: 1fr;
-    }   
 }
+    
+/* Responsive mode feuille l equipe*/
+@media (max-width: 1440px) {
+    #post-20 > div > div.wp-block-uagb-container.uagb-block-350dc45b.alignfull.uagb-is-root-container > div > div.wp-block-uagb-image.alignright.uagb-block-3f9ebaa2.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-right > figure > img {
+        height: clamp(12px, (20vw), 219px);
+        width: auto;
+    }
+}    
 
 /* Centrage du formulaire */
-.nous_contacter {
+.nous-contacter {
     display: flex;
     justify-content: center;
-}
-
-/* Mise en forme du formulaire*/
-#wpcf7-f7-p20-o1 {
-    width: 383px;
+    max-width: 383px !important;
     z-index: 2;
 }
 
@@ -161,10 +159,95 @@ footer {
     border-radius: 5px;
 }
 
-/* Superposer la fleur sous le formulaire */
-.form_flower {
-    position: absolute;
-    transform: translate(237%, -155%);
-    z-index: 1;
+/* Responsive fleur formulaire */
+.form-flower {
+    @media (max-width: 1440px) {
+        #post-20 > div > div.wp-block-uagb-container.uagb-block-350dc45b.alignfull.uagb-is-root-container > div > div.wp-block-uagb-image.alignright.uagb-block-3f9ebaa2.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-right > figure > img {
+            height: clamp(12px, (10vw), 134px);
+            width: auto;
+        }
+    }
 }
 
+/* COMMANDER */
+/* alignement formulaire*/
+.colonnes-gouts , .separateur-commande , .votre-commande , .commande {
+    max-width: 850px;
+}
+/* Première partie du formulaire en 4 colonne*/
+.quantites {
+    display: flex;
+    flex-direction: row;
+    column-count: 4;
+    flex-wrap: nowrap;
+    column-gap: 25px;
+    justify-content: space-around;
+}
+.gout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#wpcf7-f1139-p24-o1 > form > div.quantites > div:nth-child(1) > div > p > label > span > input ,
+#wpcf7-f1139-p24-o1 > form > div.quantites > div:nth-child(2) > div > p > label > span > input ,
+#wpcf7-f1139-p24-o1 > form > div.quantites > div:nth-child(3) > div > p > label > span > input ,
+#wpcf7-f1139-p24-o1 > form > div.quantites > div:nth-child(4) > div > p > label > span > input {
+    width: 39px;
+    height: 56px;
+    text-align: center;
+    padding: 0;
+    border-radius: 0;
+}
+
+
+/* Deuxième partie du formulaire en 2 colonnes */
+.donnees-perso {
+    display: flex;
+    flex-direction: row;
+    column-count: 2;
+    justify-content: space-between;
+}  
+
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.vos-infos > p > label:nth-child(1),
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.vos-infos > p > label:nth-child(3),
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.vos-infos > p > label:nth-child(5),
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.livraison > p > label:nth-child(1),
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.livraison > p > label:nth-child(3),
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.livraison > p > label:nth-child(5) {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.vos-infos > p > label:nth-child(1) > span > input,
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.vos-infos > p > label:nth-child(3) > span > input,
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.vos-infos > p > label:nth-child(5) > span > input,
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.livraison > p > label:nth-child(1) > span > input,
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.livraison > p > label:nth-child(3) > span > input,
+#wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.livraison > p > label:nth-child(5) > span > input {
+    max-width: 383px;
+    height: 71px;
+}
+
+.vos-infos , .livraison {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.vos-infos > H2 , .livraison > H2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.bouton-commande {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#wpcf7-f1139-p24-o1 > form > div.bouton-commande > p {
+    margin: 0 !important;
+}
