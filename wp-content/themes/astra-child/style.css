@@ -52,6 +52,11 @@ footer {
     gap: 0
 }
 
+/* Masquer le bouton admin */
+#astra-footer-menu > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-662 > a {
+    display: none
+}
+
 /* MAIN Page d'Accueil */
 
 /* Suppression de la marge supérieure du bloc main */
