@@ -22,3 +22,20 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+// FONCTION POUR AJOUTER LE LIEN ADMIN AU MENU 
+function add_admin_link_to_menu( $items, $args ) 
+{ 
+    if ( is_user_logged_in() ) 
+    { $dashboard_url = admin_url(); 
+        $admin_link = '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-662"><a href="' . $dashboard_url . '">Admin</a></li>'; 
+        $items_array = explode( '</li>', $items ); 
+        array_splice( $items_array, 1, 0, $admin_link );
+        $items = implode( '</li>', $items_array ); 
+    } return $items; 
+} 
+
+// 10 = valeur par défaut (priorité)| 2 = nombre d'arguments du callback 
+add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2 );
+
+?>

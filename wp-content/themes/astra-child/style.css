@@ -18,6 +18,15 @@ Updated: 2024-08-14 22:11:21
     color: black;
     font-weight: 400;
     justify-content: center;
+    padding-right: 50px;
+}
+
+/* Mise en page du bouton Admin */
+#ast-hf-menu-1 > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-662 > a {
+    color: black;
+    font-weight: 400;
+    justify-content: center;
+    padding-right: 50px;
 }
 
 /* Mise en page du bouton Commander */
@@ -100,7 +109,7 @@ footer {
     padding-top: 100px;
 }
 /* Superposer nous rencontrer et feuille */
-#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.fond_beige.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
+/*#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.fond_beige.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
     position: absolute;
     transform: translate(-350%, -30%);
 }
@@ -126,7 +135,7 @@ footer {
     display: flex;
     justify-content: center;
     max-width: 383px !important;
-    z-index: 2;
+    z-index: 2
 }
 
 #wpcf7-f7-p20-o1 > form > p:nth-child(2) > label > span > input , 
@@ -159,15 +168,14 @@ footer {
     border-radius: 5px;
 }
 
-/* Responsive fleur formulaire */
-.form-flower {
+/* Responsive feuille sous formulaire */
     @media (max-width: 1440px) {
-        #post-20 > div > div.wp-block-uagb-container.uagb-block-350dc45b.alignfull.uagb-is-root-container > div > div.wp-block-uagb-image.alignright.uagb-block-3f9ebaa2.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-right > figure > img {
+        #post-20 > div > div.wp-block-uagb-container.uagb-block-1fdb0a24.alignfull.uagb-is-root-container > div.wp-block-uagb-image.aligncenter.uagb-block-547098d2.wp-block-uagb-image--layout-default.wp-block-uagb-image--effect-static.wp-block-uagb-image--align-center.form-flower.uag-blocks-common-selector > figure > img {
             height: clamp(12px, (10vw), 134px);
             width: auto;
         }
     }
-}
+
 
 /* COMMANDER */
 /* alignement formulaire*/
@@ -182,11 +190,12 @@ footer {
     flex-wrap: nowrap;
     column-gap: 25px;
     justify-content: space-around;
+
 }
 .gout {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
 }
 
 #wpcf7-f1139-p24-o1 > form > div.quantites > div:nth-child(1) > div > p > label > span > input ,
@@ -207,6 +216,8 @@ footer {
     flex-direction: row;
     column-count: 2;
     justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
 }  
 
 #wpcf7-f1139-p24-o1 > form > div.donnees-perso > div.vos-infos > p > label:nth-child(1),
@@ -242,6 +253,16 @@ footer {
     color: white;
 }
 
+.barre-verticale {
+    width: 1px; /* Épaisseur de la barre */
+    background-color: white; /* Couleur de la barre */
+    border: none; /* Retire la bordure par défaut de <hr> */
+    height: auto;
+    align-self: stretch; /* Fait en sorte que la barre prenne toute la hauteur des colonnes */
+    margin: 0; /* Supprime toute marge pour éviter les décalages */
+}
+
+
 .bouton-commande {
     display: flex;
     justify-content: center;
@@ -249,5 +270,14 @@ footer {
 }
 
 #wpcf7-f1139-p24-o1 > form > div.bouton-commande > p {
-    margin: 0 !important;
+    width: 144.36px;
+}
+
+/* Deuxième partie du formulaire responsive */
+@media (max-width: 900px) {
+    .donnees-perso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
