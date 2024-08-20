@@ -109,7 +109,7 @@ footer {
     padding-top: 100px;
 }
 /* Superposer nous rencontrer et feuille */
-/*#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.fond_beige.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
+#wp--skip-link--target > div.entry-content.wp-block-post-content.has-global-padding.is-layout-constrained.wp-block-post-content-is-layout-constrained > div.wp-block-group.fond_beige.has-custom-color-1-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained > figure > img {
     position: absolute;
     transform: translate(-350%, -30%);
 }
