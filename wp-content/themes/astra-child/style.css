@@ -249,7 +249,6 @@ footer {
 .vos-infos , .livraison {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
 }
 
 .vos-infos > H2 , .livraison > H2 {
